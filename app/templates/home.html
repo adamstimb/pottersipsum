@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+{% block content %}
+<!-- About -->
+<h1>Birrer text fer y'website, lark</h1>
+<p><b>Lorum Ipsum</b> is a <b>foreign carry-on</b> from yonks ago that <b>web designers</b> use as <b>place-holder 
+text</b> to see if a layout is <b>abite rayt</b>.  However the <b>dullness</b> of Lorum Ipsum had led people in the 
+industry to develop a <b>sickening revulsion</b> to it<sup><a href="#fn1" id="ref1">1</a></sup>. 
+<b>Alternative Ipsum Generators</b> try to address this critical problem.</p>
+<p><b>Potters Ipsum</b> generates three (thray) paragraphs of genuine <b>North Staffordshire Gibberish&trade;</b> 
+for your layout and boilerplating needs.  It is <b>freely available</b> and distributed with an 
+<b>MIT<sup><a href="#fn1" id="ref1">2</a></sup> License</b>.</p>
+<sup id="fn1">1. Proven undebateable anecdatoral fact<a href="#ref1" title="Jump back to footnote 1 in the text."></a></sup>
+</br>
+<sup id="fn2">2. Middleport Institute of Technology<a href="#ref2" title="Jump back to footnote 2 in the text."></a></sup>
+<!-- reload button -->
+<p></p>
+<a class="btn btn-primary" href="/" role="button">Do tharragen mar mate</a>
+<p></p>
+<!-- Display generated text -->
+<div class="well well-lg">
+    {% for paragraph in paragraphs %}
+        <p>{{ paragraph }}</p>
+    {% endfor %}
+</div>
+{% endblock %}

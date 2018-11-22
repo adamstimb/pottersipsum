@@ -1,0 +1,1 @@
+web: gunicorn app:app -k gevent --timeout 5 --workers=3 --log-file=-
