@@ -3,16 +3,18 @@
     <title>Potters Ipsum</title>
     <!-- jquery before bootstrap-->
     <script src="static/jquery-3.3.1.js"></script>
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="/static/favicon.ico">
+    <!-- Description -->
+    <meta name="description" content="Potters Ipsum generates genuine North Staffordshire Gibberish for your layout and boilerplating needs.">
     <!-- Bootstrap: Latest compiled and minified CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <!-- Bootstrap: Optional theme -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
     <!-- Bootstrap: Latest compiled and minified JavaScript -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <!-- Favicon -->
-    <link rel="shortcut icon" href="/static/favicon.ico">
-    <!-- Description -->
-    <meta name="description" content="Potters Ipsum generates genuine North Staffordshire Gibberish for your layout and boilerplating needs.">
+    <!-- Add icon library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <!-- base layout -->
 <body>
@@ -35,9 +37,13 @@
                 </div>
             </nav>
     <div class="container">
+    <!-- social sharing links -->       
         <div class="page-header"></div>
-            <!-- actual content goes here -->
-            {% block content %}
-            {% endblock %}
+        <a class="btn-floating btn-lg btn-fb" type="button" role="button" href="https://www.facebook.com/sharer/sharer.php?u=https%3A//pottersipsum.herokuapp.com/" target="_blank"><i class="fa fa-facebook"></i></a>
+        <a class="btn-floating btn-lg btn-tw" type="button" role="button" href="https://twitter.com/home?status=https%3A//pottersipsum.herokuapp.com/" target="_blank"><i class="fa fa-twitter"></i></a>
+        <a class="btn-floating btn-lg btn-li" type="button" role="button" href="https://www.linkedin.com/shareArticle?mini=true&url=https%3A//pottersipsum.herokuapp.com/&title=Potters%20Ipsum&summary=Check%20out%20this%20alternative%20Lorum%20Ipsum%20generator%20mar%20mate.&source=" target="_blank"><i class="fa fa-linkedin"></i></a>
+        <!-- actual content goes here -->
+        {% block content %}
+        {% endblock %}
     </div>
 </body>
